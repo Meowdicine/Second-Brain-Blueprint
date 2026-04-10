@@ -1,0 +1,28 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.idea/
+.vscode/
+.obsidian/workspace.json
+
+# Python / Node / build
+__pycache__/
+node_modules/
+dist/
+build/
+.next/
+
+# Secrets and environment
+.env
+.env.*
+
+# Logs and local exports
+*.log
+tmp/
+temp/
+exports/
+
+# Private attachments
+90_Attachments/private/
