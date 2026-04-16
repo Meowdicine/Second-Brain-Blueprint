@@ -2,11 +2,26 @@
 
 [Read in Chinese](README.zh-CN.md)
 
-Second-Brain-Blueprint is a public-safe starter for an AI-maintained second brain.
+🧠 Second-Brain-Blueprint is a public-safe starter for an AI-maintained second brain.
+
+Think of it less like a folder dump and more like a small knowledge workshop:
+
+- raw material comes in
+- agents help sort and extract it
+- Markdown notes preserve the durable judgment
+- future projects become easier because past work stays reusable
 
 It is designed to be cloned, forked, and opened directly in Cursor, Codex, or Claude Code without exposing personal identity, immigration status, finances, contacts, or other private material.
 
-## What This Repo Is
+## 🌍 Language Switch
+
+- English: `README.md`
+- Chinese: `README.zh-CN.md`
+
+Technical paths, folder names, and control-layer filenames stay in English.
+Your actual note content can be English, Chinese, or mixed.
+
+## 🧠 What This Repo Actually Is
 
 This repo is a starter template for knowledge workers who want a second brain that stays usable over time.
 
@@ -17,37 +32,40 @@ The default stack is:
 - optional Google tools for reusable infrastructure
 - optional dashboard for display and ritual, not for first-run setup
 
-## Language Switch
+## ✨ What A Real Second Brain Feels Like
 
-- English: `README.md`
-- Chinese: `README.zh-CN.md`
-
-Technical paths, folder names, and control-layer filenames stay in English.
-
-Your actual note content can be English, Chinese, or mixed.
-
-## What A Second Brain Actually Is
-
-A second brain is not:
+A good second brain is not:
 
 - a pile of raw files
 - a folder of chat transcripts
 - a one-shot RAG question-answer setup
 - a dashboard-first product
 
-A useful second brain is a durable Markdown wiki that an agent can keep maintaining.
+A useful second brain feels more like this:
 
-That means:
+- 📥 sources remain traceable instead of disappearing into chat history
+- 🧱 notes accumulate instead of resetting every session
+- 🧭 decisions become reusable memory
+- 🔁 projects continuously feed areas and resources
+- 📈 the system gets better because maintenance compounds
 
-- raw material stays traceable
-- notes accumulate rather than reset every session
-- decisions become reusable memory
-- projects feed areas and resources over time
-- the system gets better because maintenance compounds
+The durable asset is the Markdown wiki.
+The agent is the operator, not the memory itself.
 
-## Architecture Layers
+## 🏗️ Architecture Layers
 
-- Raw sources: the evidence layer. These are documents, screenshots, PDFs, recordings, exports, and other source material.
+```mermaid
+flowchart LR
+    A["Raw sources<br/>code repos, docs, PDFs, screenshots, Drive mirrors"] --> B["Agent control layer<br/>Cursor / Codex / Claude Code"]
+    B --> C["Markdown wiki<br/>projects, areas, resources, templates"]
+    C --> D["Reusable outputs<br/>reports, decisions, checklists, presentations"]
+    E["Optional Google infrastructure<br/>Drive, Tasks, NotebookLM"] -. supports .-> A
+    E -. supports .-> B
+```
+
+Layer by layer:
+
+- Raw sources: the evidence layer. These are documents, screenshots, PDFs, recordings, exports, local folders, and external repositories.
 - Markdown wiki: the durable memory layer. This repo is where notes, synthesis, templates, and operating rules live.
 - Cursor / Codex / Claude Code: the control layer. Agents help ingest, query, restructure, lint, and maintain the wiki.
 - Google Drive / Google Tasks / NotebookLM: reusable infrastructure. Helpful defaults, but not hard dependencies.
@@ -57,7 +75,7 @@ The key boundary is simple:
 - agents are not the knowledge itself
 - the wiki is the knowledge itself
 
-## Minimum Startup
+## 🚀 Minimum Startup
 
 You do not need Node or the dashboard to start using this repo.
 
@@ -76,7 +94,81 @@ Start here:
 - `20_Areas/Operations/`
 - `99_System/Guides/WORKFLOW.md`
 
-## Control Layer: Cursor / Codex / Claude Code
+## 🔄 Example Workflow: From Codebase To Report To PPT
+
+One practical usage pattern looks like this:
+
+```mermaid
+flowchart TD
+    A["Local project code repo<br/>bugs, architecture tradeoffs, lessons"] --> C["Agent scans and extracts"]
+    B["Course project folder<br/>Google Drive mirrored locally"] --> C
+    C --> D["Markdown wiki<br/>Work / Learning / Operations"]
+    D --> E["Report draft<br/>assignment, summary, reflection"]
+    E --> F["NotebookLM<br/>slide structure and speaking outline"]
+    F --> G["PPT deck"]
+```
+
+### Scenario 1: A local project codebase teaches you something valuable
+
+Suppose you already have a code repository on your machine.
+Open a workspace that contains both:
+
+- this second-brain repo
+- your local code repo
+
+Then ask the agent to:
+
+- scan the codebase
+- extract architecture decisions, bug lessons, workflow lessons, and reusable patterns
+- promote those lessons into `10_Projects/`, `20_Areas/Work/`, or `30_Resources/`
+
+Example prompt:
+
+```text
+Read this second-brain repo and the local code repository in the same workspace.
+Extract the main engineering lessons, architecture tradeoffs, debugging patterns, and reusable workflows from the code repo.
+Write the durable takeaways back into the Markdown wiki without copying private code into the public template.
+Promote the best lessons into Work, Learning, or Resources.
+```
+
+### Scenario 2: A course assignment can reuse those lessons
+
+Suppose you also have a course project folder mirrored locally from Google Drive.
+Add that folder into the workspace too.
+
+Now the agent can:
+
+- read the course files
+- pull in relevant lessons already stored in the second brain
+- synthesize a report draft faster
+- connect evidence, prior project experience, and current assignment requirements
+
+Example prompt:
+
+```text
+Use the course project folder in this workspace together with the notes already stored in the second brain.
+Identify which prior engineering lessons are relevant.
+Draft a report structure, map evidence to each section, and suggest what should become a durable note afterward.
+```
+
+### Scenario 3: Google tools accelerate the output layer
+
+After the report is drafted:
+
+- keep the durable version in Markdown
+- use NotebookLM to quickly review the report and source packet
+- turn the report into a presentation outline
+- finalize the PPT in your preferred slide workflow
+
+In this pattern:
+
+- the code repo is a source
+- the course folder is a source
+- the second brain holds the reusable memory
+- the agent performs the extraction and transfer
+- Google tooling helps package the output faster
+
+## 🎛️ Control Layer: Cursor / Codex / Claude Code
 
 This starter supports three agent entrypoints with one shared kernel:
 
@@ -117,7 +209,7 @@ Use Markdown as the durable memory layer and treat the agent as the control laye
 Start with DASHBOARD.md, INDEX.md, and the starter areas, then suggest the smallest useful next setup step.
 ```
 
-## Google Reuse: Infrastructure And Methodology
+## ☁️ Google Reuse: Infrastructure And Methodology
 
 Google tooling is documented here because it is easy to reuse:
 
@@ -136,12 +228,11 @@ You can still use the starter with:
 
 Google is treated as reusable infrastructure, not as the definition of the system.
 
-## Optional Dashboard
+## 🖥️ Optional Dashboard
 
 The React dashboard is optional.
 
 It is useful if you want a visual layer for status, next actions, and lightweight ritual.
-
 It is not required for first-run onboarding.
 
 Run it only if you want it:
@@ -157,10 +248,9 @@ Runtime requirements:
 - Node `>=22 <23`
 - npm `>=10 <11`
 
-## Privacy Boundary
+## 🔒 Privacy Boundary
 
 This public repo is the framework layer.
-
 Your real usage should live in a private instance layer.
 
 Framework layer:
@@ -181,7 +271,7 @@ Instance layer:
 
 Read `PRIVACY.md` before publishing changes from a real working copy.
 
-## What This Is Not
+## 🚫 What This Is Not
 
 - Not a public dump of personal life data
 - Not a dashboard-first PKM product
@@ -189,7 +279,7 @@ Read `PRIVACY.md` before publishing changes from a real working copy.
 - Not tied to a single AI vendor
 - Not useful only if you also adopt Google tools
 
-## Core Entry Files
+## 📍 Core Entry Files
 
 - `README.md`
 - `README.zh-CN.md`
@@ -202,7 +292,7 @@ Read `PRIVACY.md` before publishing changes from a real working copy.
 - `99_System/Guides/WORKFLOW.md`
 - `99_System/Guides/QUICK_REFERENCE.md`
 
-## License And Reuse
+## ♻️ License And Reuse
 
 Use this repo as a starter and adapt it into your own private second brain.
 
