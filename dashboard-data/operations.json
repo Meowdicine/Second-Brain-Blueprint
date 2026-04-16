@@ -1,0 +1,28 @@
+{
+  "slug": "operations",
+  "title": "Operations",
+  "description": "Use this area for maintenance, review loops, cleanup, privacy boundaries, and system reliability.",
+  "kpis": [
+    { "label": "Inbox items", "value": "6" },
+    { "label": "Maintenance tasks", "value": "3" },
+    { "label": "Weekly review", "value": "Scheduled" }
+  ],
+  "focus": "Keep the system lean, privacy-safe, and easy to restart after time away.",
+  "prompts": [
+    "Based on 20_Areas/Operations, DASHBOARD.md, and 99_System/Guides/WORKFLOW.md, identify the main maintenance bottleneck and propose a cleanup pass.",
+    "Audit the current starter for link drift, stale entrypoints, and public-template violations.",
+    "Turn the latest maintenance changes into a short system-log update."
+  ],
+  "checkpoints": [
+    "Inbox does not grow without review.",
+    "Control-layer files still agree on the same operating model.",
+    "The public template contains no private instance data."
+  ],
+  "nextActions": [
+    { "id": "o1", "done": false, "text": "Process part of the inbox." },
+    { "id": "o2", "done": false, "text": "Run one privacy or drift check." },
+    { "id": "o3", "done": false, "text": "Log the maintenance change if the system itself changed." }
+  ],
+  "markdownLink": "20_Areas/Operations/Operations.md",
+  "lastUpdated": "2026-04-15"
+}

@@ -1,0 +1,72 @@
+{
+  "scoreboards": {
+    "work": {
+      "activeProjects": 3,
+      "shippedOutputs": 2,
+      "blockers": 1,
+      "currentFocus": "Clarify the next shippable step for the most important active project."
+    },
+    "learning": {
+      "sourcesIngested": 4,
+      "synthesisNotes": 2,
+      "reviewCadence": "Weekly",
+      "currentFocus": "Turn recent source notes into durable, linked takeaways."
+    },
+    "operations": {
+      "inboxItems": 6,
+      "maintenanceTasks": 3,
+      "weeklyReviewStatus": "Scheduled",
+      "currentFocus": "Reduce friction in the workflow and keep the starter clean."
+    }
+  },
+  "weeklyDeliverables": [
+    {
+      "id": "d1",
+      "title": "Write one active project brief",
+      "type": "project-brief",
+      "status": "pending",
+      "link": "/goals/work",
+      "notePath": "10_Projects/Sample-Project-Launch.md"
+    },
+    {
+      "id": "d2",
+      "title": "Promote one source into Learning",
+      "type": "synthesis",
+      "status": "pending",
+      "link": "/goals/learning",
+      "notePath": "20_Areas/Learning/Learning.md"
+    },
+    {
+      "id": "d3",
+      "title": "Run one weekly review pass",
+      "type": "maintenance",
+      "status": "pending",
+      "link": "/goals/operations",
+      "notePath": "20_Areas/Operations/Operations.md"
+    }
+  ],
+  "nextActions": [
+    {
+      "id": "a1",
+      "done": false,
+      "text": "Review Work and choose the top active project.",
+      "tag": "work",
+      "notePath": "20_Areas/Work/Work.md"
+    },
+    {
+      "id": "a2",
+      "done": false,
+      "text": "Summarize one recent source in Learning.",
+      "tag": "learning",
+      "notePath": "20_Areas/Learning/Learning.md"
+    },
+    {
+      "id": "a3",
+      "done": false,
+      "text": "Process part of the inbox and log any workflow change.",
+      "tag": "operations",
+      "notePath": "20_Areas/Operations/Operations.md"
+    }
+  ],
+  "lastUpdated": "2026-04-15"
+}

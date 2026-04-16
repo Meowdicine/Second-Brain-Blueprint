@@ -1,0 +1,15 @@
+---
+description: Wiki maintenance loop for Cursor-Memo
+globs:
+  - "**/*.md"
+  - "**/*.mdx"
+alwaysApply: false
+---
+
+# Wiki Maintenance
+
+- Prefer maintaining durable notes over leaving knowledge in chat history.
+- For important new sources: register source, create or update a source note, update the relevant area or synthesis note, and capture the change in the log if needed.
+- Keep starter notes generic and reusable in the public template.
+- Use synthesis notes when a topic starts to shape decisions across multiple notes.
+- Do not create ceremony-only notes or over-fragment the wiki.

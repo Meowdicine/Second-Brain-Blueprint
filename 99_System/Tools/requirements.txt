@@ -1,0 +1,30 @@
+# Document Reader Tool Dependencies (文档读取工具依赖)
+# Install with: pip install -r requirements.txt (安装：pip install -r requirements.txt)
+
+# PDF Processing (PDF 处理)
+pdfplumber>=0.10.0
+
+# DOCX Processing (DOCX 处理)
+python-docx>=1.1.0
+
+# Image Processing and OCR (图片处理和 OCR)
+Pillow>=10.0.0
+pytesseract>=0.3.10
+
+# Note: pytesseract requires Tesseract OCR engine to be installed separately (注意：pytesseract 需要单独安装 Tesseract OCR 引擎)
+# Windows: Download from https://github.com/UB-Mannheim/tesseract/wiki
+# macOS: brew install tesseract
+# Linux: sudo apt-get install tesseract-ocr
+
+
+
+
+
+
+
+
+
+
+
+
+

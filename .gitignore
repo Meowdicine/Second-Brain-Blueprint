@@ -1,28 +1,43 @@
-# OS
+# OS / Editor
 .DS_Store
 Thumbs.db
+*.swp
+*.swo
+*~
 
-# Editors
-.idea/
+# Cursor / VSCode workspace
 .vscode/
-.obsidian/workspace.json
+.cursor/*
+!.cursor/rules/
+!.cursor/rules/**
+.cursor/rules/language-and-documentation.mdc
+*.code-workspace
+.cursorrules
 
-# Python / Node / build
-__pycache__/
-node_modules/
-dist/
-build/
-.next/
+# Obsidian (Obsidian configuration - may contain sensitive info)
+.obsidian/
+.idx/
 
-# Secrets and environment
-.env
-.env.*
+# Dashboard (Next.js)
+dashboard/node_modules/
+dashboard/build/
+dashboard/.next/
+dashboard/.next-runtime/
+dashboard/.tmp-debug/
 
-# Logs and local exports
+# Temp
+*.tmp
+*.bak
 *.log
-tmp/
-temp/
-exports/
+.tmp.driveupload/
 
-# Private attachments
-90_Attachments/private/
+# Optional large local-only folders
+.tmp.drivedownload/
+
+# OS generated files
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini

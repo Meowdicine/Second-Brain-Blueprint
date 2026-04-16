@@ -1,0 +1,28 @@
+{
+  "slug": "learning",
+  "title": "Learning",
+  "description": "Use this area for source ingestion, synthesis, topic development, and updating your mental models.",
+  "kpis": [
+    { "label": "Sources ingested", "value": "4" },
+    { "label": "Synthesis notes", "value": "2" },
+    { "label": "Review cadence", "value": "Weekly" }
+  ],
+  "focus": "Pull one raw source through the full loop: ingest, summarize, link, and promote the durable takeaway.",
+  "prompts": [
+    "Based on my recent source notes and 20_Areas/Learning, extract the three most durable takeaways and suggest where they should be linked.",
+    "Compare the latest source note against existing Learning notes and identify what is genuinely new.",
+    "Rewrite the current learning thread as a concise synthesis note for future reuse."
+  ],
+  "checkpoints": [
+    "Recent sources have note-level summaries.",
+    "Takeaways are promoted into durable notes rather than left in raw captures.",
+    "Links connect source notes, synthesis notes, and affected areas."
+  ],
+  "nextActions": [
+    { "id": "l1", "done": false, "text": "Choose one recent source to ingest fully." },
+    { "id": "l2", "done": false, "text": "Write or refresh one synthesis note." },
+    { "id": "l3", "done": false, "text": "Link the takeaway into the relevant area or project." }
+  ],
+  "markdownLink": "20_Areas/Learning/Learning.md",
+  "lastUpdated": "2026-04-15"
+}

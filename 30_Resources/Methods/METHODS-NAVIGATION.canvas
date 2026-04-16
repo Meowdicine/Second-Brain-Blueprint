@@ -1,0 +1,90 @@
+{
+  "nodes": [
+    {
+      "id": "g-method-core",
+      "type": "group",
+      "x": -120,
+      "y": -120,
+      "width": 1180,
+      "height": 720,
+      "color": "4",
+      "label": "Reusable Methods"
+    },
+    {
+      "id": "g-method-hook",
+      "type": "group",
+      "x": 1140,
+      "y": -120,
+      "width": 920,
+      "height": 720,
+      "color": "5",
+      "label": "System Hooks"
+    },
+    {
+      "id": "methods-guide",
+      "type": "text",
+      "x": 20,
+      "y": 20,
+      "width": 340,
+      "height": 220,
+      "color": "3",
+      "text": "# Methods Navigation\n\n- [[99_System/Maps/METHODS-HUB|Methods Hub]]\n- Use methods for repeatable action\n- Use resources for reference knowledge"
+    },
+    {
+      "id": "methods-capture",
+      "type": "text",
+      "x": 420,
+      "y": 20,
+      "width": 320,
+      "height": 240,
+      "color": "4",
+      "text": "## Capture Methods\n\n- [[30_Resources/Methods/Voice-To-Knowledge|Voice to Knowledge]]\n- Fast capture during fragmented time\n- Turn fragments into searchable notes"
+    },
+    {
+      "id": "methods-output",
+      "type": "text",
+      "x": 780,
+      "y": 20,
+      "width": 320,
+      "height": 240,
+      "color": "4",
+      "text": "## Output Methods\n\n- [[30_Resources/Methods/PPT-NotebookLM|PPT with NotebookLM]]\n- [[30_Resources/Methods/Poster-Canvas-PPT|Poster Canvas -> PPT]]\n- Fast presentation packaging"
+    },
+    {
+      "id": "methods-hooks",
+      "type": "text",
+      "x": 1260,
+      "y": 20,
+      "width": 340,
+      "height": 240,
+      "color": "5",
+      "text": "## Workflow Hooks\n\n- [[99_System/Guides/WORKFLOW|Workflow]]\n- [[99_System/Guides/WHAT-TO-STORE|What to Store]]\n- Methods plug back into the system"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-method-guide-capture",
+      "fromNode": "methods-guide",
+      "fromSide": "right",
+      "toNode": "methods-capture",
+      "toSide": "left",
+      "label": "capture"
+    },
+    {
+      "id": "e-capture-output",
+      "fromNode": "methods-capture",
+      "fromSide": "right",
+      "toNode": "methods-output",
+      "toSide": "left",
+      "label": "package"
+    },
+    {
+      "id": "e-output-hooks",
+      "fromNode": "methods-output",
+      "fromSide": "right",
+      "toNode": "methods-hooks",
+      "toSide": "left",
+      "label": "reuse"
+    }
+  ]
+}

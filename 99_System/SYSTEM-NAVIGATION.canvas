@@ -1,0 +1,90 @@
+{
+  "nodes": [
+    {
+      "id": "g-system-rules",
+      "type": "group",
+      "x": -120,
+      "y": -120,
+      "width": 1180,
+      "height": 720,
+      "color": "5",
+      "label": "🧭 Guides & Rules"
+    },
+    {
+      "id": "g-system-assets",
+      "type": "group",
+      "x": 1140,
+      "y": -120,
+      "width": 920,
+      "height": 720,
+      "color": "6",
+      "label": "🧱 Templates & Summaries"
+    },
+    {
+      "id": "system-guide",
+      "type": "text",
+      "x": 20,
+      "y": 20,
+      "width": 340,
+      "height": 220,
+      "color": "3",
+      "text": "# 🧭 System Navigation\n\n- [[99_System/Maps/SYSTEM-HUB|🏠 System Hub]]\n- Use this layer for process, rules, and setup\n- Templates and reusable system assets live to the right"
+    },
+    {
+      "id": "system-rules",
+      "type": "text",
+      "x": 420,
+      "y": 20,
+      "width": 340,
+      "height": 260,
+      "color": "5",
+      "text": "## 🔁 Rules & Workflow\n\n- [[99_System/Guides/WORKFLOW|Workflow]]\n- [[99_System/Guides/QUICK_REFERENCE|Quick Reference]]\n- [[99_System/Rules/AI_RULES|AI Rules]]\n- [[99_System/Rules/FILE_PERMISSIONS|File Permissions]]"
+    },
+    {
+      "id": "system-assets",
+      "type": "text",
+      "x": 1260,
+      "y": 20,
+      "width": 340,
+      "height": 260,
+      "color": "6",
+      "text": "## 🧱 Templates & Log\n\n- [[99_System/Templates/Issue-Closure-Card-Template|Issue Closure Template]]\n- [[99_System/LOG|System Log]]\n- Reusable scaffolding and memory of changes"
+    },
+    {
+      "id": "system-return",
+      "type": "text",
+      "x": 780,
+      "y": 320,
+      "width": 320,
+      "height": 200,
+      "color": "4",
+      "text": "## 🏠 Back to Top\n\n- [[README|Root README]]\n- System notes support the whole starter"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-system-guide-rules",
+      "fromNode": "system-guide",
+      "fromSide": "right",
+      "toNode": "system-rules",
+      "toSide": "left",
+      "label": "operate"
+    },
+    {
+      "id": "e-system-rules-assets",
+      "fromNode": "system-rules",
+      "fromSide": "right",
+      "toNode": "system-assets",
+      "toSide": "left",
+      "label": "support"
+    },
+    {
+      "id": "e-system-assets-return",
+      "fromNode": "system-assets",
+      "fromSide": "left",
+      "toNode": "system-return",
+      "toSide": "right",
+      "label": "back"
+    }
+  ]
+}

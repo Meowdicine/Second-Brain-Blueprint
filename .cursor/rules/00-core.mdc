@@ -1,0 +1,13 @@
+---
+description: Core public-starter rules for Cursor
+alwaysApply: true
+---
+
+# Cursor-Memo Core Rules
+
+- This repository is a public-safe second-brain starter, not a personal public vault.
+- Keep technical paths and filenames in English.
+- Use Work / Learning / Operations as the starter area model unless the user requests otherwise.
+- Keep raw sources outside the wiki by default and register them through `90_Attachments/SOURCE-INDEX.md`.
+- Do not commit private identity, immigration, finance, relationship, or contact-network data into the starter.
+- Follow `README.md`, `PRIVACY.md`, `99_System/Agent-Kernel.md`, and `99_System/Guides/WORKFLOW.md`.

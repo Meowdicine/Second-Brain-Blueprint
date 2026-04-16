@@ -1,0 +1,28 @@
+{
+  "slug": "work",
+  "title": "Work",
+  "description": "Use this area for delivery-facing work, active responsibilities, and outcomes that should ship.",
+  "kpis": [
+    { "label": "Active projects", "value": "3" },
+    { "label": "Shipped outputs", "value": "2" },
+    { "label": "Current blockers", "value": "1" }
+  ],
+  "focus": "Pick the most important active stream, define the next shippable move, and record the decision in the note.",
+  "prompts": [
+    "Based on 20_Areas/Work and 10_Projects, identify the highest-leverage next step and rewrite it as a shippable action.",
+    "Review the current work note and highlight what is blocked, what is moving, and what should be deferred.",
+    "Turn the current project context into a concise weekly brief with one owner, one deliverable, and one next action."
+  ],
+  "checkpoints": [
+    "Every active project has a clear next action.",
+    "Important work is backed by a durable project note.",
+    "Finished work is rewritten into reusable knowledge or achievements."
+  ],
+  "nextActions": [
+    { "id": "w1", "done": false, "text": "Choose the highest-leverage active project." },
+    { "id": "w2", "done": false, "text": "Write the next shippable step in plain language." },
+    { "id": "w3", "done": false, "text": "Link the project back to Work so the context stays visible." }
+  ],
+  "markdownLink": "20_Areas/Work/Work.md",
+  "lastUpdated": "2026-04-15"
+}
